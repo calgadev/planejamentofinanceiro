@@ -1,0 +1,35 @@
+# Virtual environments
+venv/
+.venv/
+.env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.dylib
+
+# Logs
+*.log
+
+# Coverage
+htmlcov/
+.coverage
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Ignore workspace user settings
+*.code-workspace
