@@ -196,7 +196,7 @@ layout = dbc.Col([
                                         dbc.Button("Adicionar", className='btn btn-success', id='add-category-despesa', style={'margin-top': '20px'}),
                                         html.Br(),
                                         html.Div(id='category-div-add-despesa', style={}),
-                                    ], width=6),
+                                    ], width=6, style={'padding': '10px'}),
 
                                     dbc.Col([
                                         html.Legend("Excluir categorias", style={'color': 'red'}),
@@ -208,7 +208,7 @@ layout = dbc.Col([
                                             input_checked_style={'backgroundColor': 'blue', 'borderColor': 'orange'},
                                             ),
                                         dbc.Button('Remover', color='warning', id='remove-category-despesa', style={'margin-top': '20px'}),
-                                    ], width=6)
+                                    ], width=6, style={'padding': '10px'})
                                 ])
                             ], title="Gerenciar categorias"),
                     ], flush=True, start_collapsed=True, id='accordion-despesa'),
