@@ -2,7 +2,6 @@ import os
 import dash
 import dash_bootstrap_components as dbc
 
-# Ensure Dash serves static assets from the top-level `assets/` directory
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 ASSETS_FOLDER = os.path.join(PROJECT_ROOT, "assets")
 

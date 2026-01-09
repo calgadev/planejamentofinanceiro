@@ -5,7 +5,6 @@ from dash.dependencies import Input, Output
 import pandas as pd
 import plotly.express as px
 
-# Allow running this file directly: ensure project root and src are on sys.path
 import os
 import sys
 ROOT = os.path.dirname(os.path.dirname(__file__))
@@ -17,6 +16,7 @@ if SRC not in sys.path:
 
 from app import *
 from components import sidebar, extratos, dashboards
+from globals import *
 
 
 
@@ -24,6 +24,11 @@ from components import sidebar, extratos, dashboards
 content = html.Div(id="page-content")
 
 app.layout = dbc.Container(children=[
+    dcc.Store(id='store-receitas', data=df_receitas.to_dict()),
+    dcc.Store(id='store-despesas', data=df_despesas.to_dict()),
+    dcc.Store(id='store-cat-receitas', data=df_cat_receitas.to_dict()),
+    dcc.Store(id='store-cat-despesas', data=df_cat_despesas.to_dict()),
+
    dbc.Row([
         dbc.Col([
             dcc.Location(id="url"),
